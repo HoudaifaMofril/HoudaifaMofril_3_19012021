@@ -1,0 +1,161 @@
+.section_fonctionnement {
+    
+
+
+    h2 {}
+
+    aside {
+        @media #{$mobile_first} {}
+        @media #{$desktop} {
+        
+
+            
+            
+            
+        }
+
+        & .__howtosteps {
+            width: 90%;
+            margin: auto;
+            margin-bottom: 50px;
+
+            @media #{$desktop} {
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+            }
+
+            & .__steps {
+                display: flex;
+                padding: 20px 25px;
+                border: 2px solid $color_background;
+                background-color: rgb(250, 250, 250);
+                margin: auto;
+                margin-bottom: 30px;
+                width: 90%;
+                @include rounded(25px);
+                @include shadow(3px, 4px, 10px, darken($color_background, 30%));
+
+
+
+                @media #{$mobile_first} {
+                    margin-bottom: 30px;
+                    margin-left: 15px;
+                    width: 320px;
+                }
+
+                @media #{$desktop} {
+
+                    padding: 30px 10px;
+                    
+                    width: 30%;
+                }
+                
+
+                & .number {
+                    border: 2px solid $color_primary;
+                    background-color: $color_primary;
+                    padding: 5px 10px;
+                    position: absolute;
+                    left: 9%;
+                    @include rounded(50%);
+                    color: white;
+
+                    @media #{$mobile_first} {
+                        position: absolute;
+                    left: 5%;
+                        
+
+                    }
+                    @media #{$tablet}
+                    {
+                        font-size: 1.2rem;
+                    }
+                    @media #{$desktop} {
+
+                        
+                        @include rounded(30px);
+                        position: relative;
+                        left: 3%;
+                    }
+                }
+
+
+                & .icon_and_title {
+                    display: flex;
+                    padding: 5px 8px;
+                    margin-left: 10%;
+
+                    @media #{$mobile_first} {
+                        margin: 0;
+                        
+                    }
+                    @media #{$tablet}
+                {
+                    justify-content: center;
+                    
+                    width: 100%;
+                }
+                @media #{$desktop} {
+
+                   
+                    
+                    
+                }
+
+                    & .fonctionnement_icon {
+                        width: 50px;
+                        @media #{$mobile_first} {
+                            width: 50px;
+                        }
+                        @media #{$tablet}
+                        {
+                            
+
+                            font-size: 1.3rem;
+                            
+                        }
+                        @media #{$desktop} {
+
+                            
+                        }
+                    }
+
+                    & .titlesteps {
+                        width: 100%;
+                        font: {
+                            size: 1.2rem;
+                            weight: 500;
+                        }
+
+                        @media #{$mobile_first} {
+                            font: {
+                                size: 1rem;
+                                weight: 500;
+                            }
+                            
+
+                        }
+                        @media #{$tablet}
+                        {
+                            width: 50%;
+                            font-size: 1.4rem;
+                            
+                        }
+                        @media #{$desktop} {
+
+                            font-size: 1.1rem;
+                            width: 100%;
+                            
+                        }
+                    }
+                }
+
+            }
+
+            
+        }
+    }
+
+
+}

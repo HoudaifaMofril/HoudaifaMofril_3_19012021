@@ -1,0 +1,31 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    & .__logo {
+        width: 200px;
+    }
+
+
+    @media #{$mobile_first} {
+        & .__logo {
+            width: 50%;
+
+        }
+    }
+
+    @media #{$tablet} {
+        & .__logo {
+            width: 30%;
+        }
+    }
+
+    @media #{$desktop} {
+        & .__logo {
+            width: 200px;
+        }
+
+    }
+}

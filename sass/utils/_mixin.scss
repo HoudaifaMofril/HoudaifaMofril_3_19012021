@@ -1,0 +1,95 @@
+@mixin rounded($radius) {
+    -webkit-border-radius:$radius;
+    -moz-border-radius:$radius;
+    border-radius: $radius;
+    
+}
+@mixin shadow($x, $y, $blur, $color) {
+
+    -webkit-box-shadow: $x $y $blur $color;
+    -moz-box-shadow: $x $y $blur $color;
+    box-shadow: $x $y $blur $color;
+}
+@mixin heart_animation
+{
+
+.heart_like {
+    font-size: 1.8rem;
+    width: 50px;
+    position: absolute;
+    right: 8%;
+    margin-top: -40px;
+    cursor: pointer;
+    & .heart_full {
+        z-index: 1;
+        background: $color_heart_animation;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0;
+        transform: scale(0.5);
+        transition: .3s ease;
+        &:hover {}
+    }
+
+    & .heart_empty {
+        position: absolute; 
+        z-index: 2;
+        &:hover {
+            background: $color_heart_animation;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 0px white;
+        }
+        &:hover+.heart_full {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+}
+
+}
+
+@mixin header
+{
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    
+        & .__logo {
+            width: 200px;
+        }
+    }
+}
+@mixin footer
+{
+    footer
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $color_background_footer;
+    & *
+    {
+        margin-left: 5px;
+    }
+    & .font_shrikhand
+    {
+        color: $color_text_footer;
+        font-size: 1.3rem;
+        margin-left: 15px;
+    }
+    & ul > li
+    {
+        color: $color_text_footer;
+        line-height: 1.8rem;
+        & i
+        {
+            margin-right: 10px;
+            width: 20px;
+        }
+    }
+}
+}
+
+

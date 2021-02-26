@@ -1,0 +1,44 @@
+body {
+
+    & .load {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: 10;
+        display: flex;
+        background-color: white;
+        animation: loader 3000ms forwards;
+
+
+        & .load_circle {
+            position: relative;
+            margin-right: auto;
+            margin-left:auto;
+            top: 10%;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            &.circle1 {
+                
+                background-color: #9356DC;
+                animation: circle 3000ms linear infinite;
+
+
+            }
+
+            &.circle2 {
+                background-color: #FF79DA;
+                animation: circle 3000ms linear 300ms infinite;
+            }
+
+            &.circle3 {
+                background-color: #99E2D0;
+                animation: circle 3000ms linear 600ms infinite;
+            }
+
+        }
+    }
+
+
+}

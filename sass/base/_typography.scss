@@ -1,0 +1,19 @@
+body
+{
+    font-family: $font_text;
+}
+.font_shrikhand
+{
+    font-family: $font_main;
+    
+}
+.title
+{
+    font-size: 1.4rem;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    @media #{$tablet}
+    {
+        font-size: 1.9rem;;
+    }
+}
